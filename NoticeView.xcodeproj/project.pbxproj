@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		250628781651F7DC00D3443E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 250628771651F7DB00D3443E /* Default-568h@2x.png */; };
 		3EA90DC617086FF70045E620 /* WBScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA90DC517086FF70045E620 /* WBScrollViewController.m */; };
+		54A0DDC01BCEE8F8005F41F2 /* CSSuccessNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0DDBF1BCEE8F8005F41F2 /* CSSuccessNoticeView.m */; settings = {ASSET_TAGS = (); }; };
 		592BDDE915645BEE00B78820 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 592BDDE115645BEE00B78820 /* Default.png */; };
 		592BDDEA15645BEE00B78820 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 592BDDE215645BEE00B78820 /* Default@2x.png */; };
 		592BDDEB15645BEE00B78820 /* NoticeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 592BDDE415645BEE00B78820 /* NoticeView.bundle */; };
@@ -39,6 +40,8 @@
 		250628771651F7DB00D3443E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 		3EA90DC417086FF70045E620 /* WBScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBScrollViewController.h; sourceTree = "<group>"; };
 		3EA90DC517086FF70045E620 /* WBScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBScrollViewController.m; sourceTree = "<group>"; };
+		54A0DDBE1BCEE8F8005F41F2 /* CSSuccessNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSuccessNoticeView.h; path = NoticeView/CSNoticeView/CSSuccessNoticeView.h; sourceTree = "<group>"; };
+		54A0DDBF1BCEE8F8005F41F2 /* CSSuccessNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSSuccessNoticeView.m; path = NoticeView/CSNoticeView/CSSuccessNoticeView.m; sourceTree = "<group>"; };
 		592BDDE115645BEE00B78820 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		592BDDE215645BEE00B78820 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		592BDDE415645BEE00B78820 /* NoticeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NoticeView.bundle; sourceTree = "<group>"; };
@@ -94,6 +97,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54A0DDBC1BCEE849005F41F2 /* CSNoticeView */ = {
+			isa = PBXGroup;
+			children = (
+				54A0DDBD1BCEE865005F41F2 /* Private */,
+				54A0DDBE1BCEE8F8005F41F2 /* CSSuccessNoticeView.h */,
+				54A0DDBF1BCEE8F8005F41F2 /* CSSuccessNoticeView.m */,
+			);
+			name = CSNoticeView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		54A0DDBD1BCEE865005F41F2 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
 		592BDDE015645BEE00B78820 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +183,7 @@
 				59A782471562F5F80001F08D /* WBViewController.h */,
 				59A782481562F5F80001F08D /* WBViewController.m */,
 				592BDDE315645BEE00B78820 /* WBNoticeView */,
+				54A0DDBC1BCEE849005F41F2 /* CSNoticeView */,
 				592BDDE015645BEE00B78820 /* Images */,
 				59A782391562F5F70001F08D /* Supporting Files */,
 			);
@@ -227,6 +249,11 @@
 				CLASSPREFIX = WB;
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Tito Ciuro";
+				TargetAttributes = {
+					59A7822D1562F5F70001F08D = {
+						DevelopmentTeam = T5AZCDCP4U;
+					};
+				};
 			};
 			buildConfigurationList = 59A782281562F5F70001F08D /* Build configuration list for PBXProject "NoticeView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -275,6 +302,7 @@
 				746CBD001570A1D100B844B1 /* WBErrorNoticeView.m in Sources */,
 				746CBD081570A8FA00B844B1 /* WBSuccessNoticeView.m in Sources */,
 				7492FA45157C8CD700FB834C /* WBBlueGradientView.m in Sources */,
+				54A0DDC01BCEE8F8005F41F2 /* CSSuccessNoticeView.m in Sources */,
 				7492FA46157C8CD700FB834C /* WBRedGradientView.m in Sources */,
 				748A6A59157D0B74003C7655 /* WBGrayGradientView.m in Sources */,
 				748A6A5D157D0D06003C7655 /* WBStickyNoticeView.m in Sources */,
@@ -354,11 +382,14 @@
 		59A7824D1562F5F80001F08D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NoticeView/NoticeView-Prefix.pch";
 				INFOPLIST_FILE = "NoticeView/NoticeView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -367,11 +398,14 @@
 		59A7824E1562F5F80001F08D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NoticeView/NoticeView-Prefix.pch";
 				INFOPLIST_FILE = "NoticeView/NoticeView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
