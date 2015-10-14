@@ -40,8 +40,8 @@
 		250628771651F7DB00D3443E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 		3EA90DC417086FF70045E620 /* WBScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBScrollViewController.h; sourceTree = "<group>"; };
 		3EA90DC517086FF70045E620 /* WBScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBScrollViewController.m; sourceTree = "<group>"; };
-		54A0DDBE1BCEE8F8005F41F2 /* CSSuccessNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSuccessNoticeView.h; path = NoticeView/CSNoticeView/CSSuccessNoticeView.h; sourceTree = "<group>"; };
-		54A0DDBF1BCEE8F8005F41F2 /* CSSuccessNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSSuccessNoticeView.m; path = NoticeView/CSNoticeView/CSSuccessNoticeView.m; sourceTree = "<group>"; };
+		54A0DDBE1BCEE8F8005F41F2 /* CSSuccessNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSuccessNoticeView.h; path = ../CSNoticeView/CSSuccessNoticeView.h; sourceTree = "<group>"; };
+		54A0DDBF1BCEE8F8005F41F2 /* CSSuccessNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSSuccessNoticeView.m; path = ../CSNoticeView/CSSuccessNoticeView.m; sourceTree = "<group>"; };
 		592BDDE115645BEE00B78820 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		592BDDE215645BEE00B78820 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		592BDDE415645BEE00B78820 /* NoticeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NoticeView.bundle; sourceTree = "<group>"; };
@@ -97,24 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		54A0DDBC1BCEE849005F41F2 /* CSNoticeView */ = {
-			isa = PBXGroup;
-			children = (
-				54A0DDBD1BCEE865005F41F2 /* Private */,
-				54A0DDBE1BCEE8F8005F41F2 /* CSSuccessNoticeView.h */,
-				54A0DDBF1BCEE8F8005F41F2 /* CSSuccessNoticeView.m */,
-			);
-			name = CSNoticeView;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		54A0DDBD1BCEE865005F41F2 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Private;
-			sourceTree = "<group>";
-		};
 		592BDDE015645BEE00B78820 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +121,8 @@
 				746CBD071570A8FA00B844B1 /* WBSuccessNoticeView.m */,
 				748A6A5B157D0D06003C7655 /* WBStickyNoticeView.h */,
 				748A6A5C157D0D06003C7655 /* WBStickyNoticeView.m */,
+				54A0DDBE1BCEE8F8005F41F2 /* CSSuccessNoticeView.h */,
+				54A0DDBF1BCEE8F8005F41F2 /* CSSuccessNoticeView.m */,
 				746CBD051570A88800B844B1 /* Private */,
 			);
 			path = WBNoticeView;
@@ -183,7 +167,6 @@
 				59A782471562F5F80001F08D /* WBViewController.h */,
 				59A782481562F5F80001F08D /* WBViewController.m */,
 				592BDDE315645BEE00B78820 /* WBNoticeView */,
-				54A0DDBC1BCEE849005F41F2 /* CSNoticeView */,
 				592BDDE015645BEE00B78820 /* Images */,
 				59A782391562F5F70001F08D /* Supporting Files */,
 			);
